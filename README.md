@@ -33,6 +33,14 @@ a := limit a, -99..99;
 
 - https://en.wikipedia.org/wiki/Integer_square_root
 
+### X!
+
+### ABS
+
+### Hyp
+
+### Pi, e, 
+
 
 
 
