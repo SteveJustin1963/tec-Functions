@@ -29,3 +29,10 @@ a := limit a, -99..99;
 :B 10000(A);
 ```
 
+### sqrt
+
+- https://en.wikipedia.org/wiki/Integer_square_root
+
+
+
+
