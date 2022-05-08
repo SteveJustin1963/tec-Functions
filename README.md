@@ -32,10 +32,7 @@ x - x^3/3 + (2 x^5)/15 + O(x^6)
 ### random
 - https://github.com/SteveJustin1963/tec-RANDOM
 
-```
-:A 7 x@ * 3 + " x! 32555 > (`_`)(`|`);
-:B 10000(A);
-```
+
 
 ### sqrt
 
