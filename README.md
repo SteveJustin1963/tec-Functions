@@ -24,18 +24,10 @@ cos(x) = sum_(k=0)^∞ ((-1)^k x^(2 k))/((2 k)!)`
 
 
 ### tanh(x)
-
-`x - x^3/3 + (2 x^5)/15 + O(x^6)`
-
 ```
-\\ forth
-\\ crude integer approximation of tanh(x). The graphs are actually pretty close.
-
-: tanh ( n1--n2 ) dup 82 < if 85 * 100 / else 25 * 100 / 51 + then 99 min -99 max ;
-
-a := if a<82 then 85a/100 else 25a/100+51;
-a := limit a, -99..99;
+x - x^3/3 + (2 x^5)/15 + O(x^6)
 ```
+ 
 
 ### random
 - https://github.com/SteveJustin1963/tec-RANDOM
