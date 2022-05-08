@@ -1,0 +1,20 @@
+; x = x (1 - abs(x))
+; make a c program that prints the function f(x) 
+; for x = -1, -0.9, -0.8, -0.7, -0.6, -0.5, -0.4, -0.3, -0.2, -0.1, 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+  int i;
+  float x;
+  for (i = -10; i <= 10; i++) {
+    x = (float)i/10;
+    printf("f(%f) = %f\n", x, f(x));
+  }
+  return 0;
+}
+
+float f(float x) {
+  return x * (1 - fabs(x));
+}
