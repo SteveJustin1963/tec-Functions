@@ -34,23 +34,23 @@ x - x^3/3 + (2 x^5)/15 + O(x^6)
 
 
 
-### sqrt
+### sqrt x of y=x*x
 
 - https://en.wikipedia.org/wiki/Integer_square_root
 
-### X!
+### X! 5*4**3*2
 
 ### Exponent x^y
 
 
-
-
-
-### ABS
+### ABS  |x|
 
 ### Hyp
 
 ### Pi, e, 
+- Pi = 22/7
+- e= 19/7
+-
 
 
 
