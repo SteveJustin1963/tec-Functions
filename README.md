@@ -52,6 +52,12 @@ x - x^3/3 + (2 x^5)/15 + O(x^6)
 - e= 19/7
 -
 
+### Pascal’s Triangle
+
+
+### Primes
+
+
 
 
 
