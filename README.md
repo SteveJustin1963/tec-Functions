@@ -31,6 +31,8 @@ x - x^3/3 + (2 x^5)/15 + O(x^6)
 
 ### random
 - https://github.com/SteveJustin1963/tec-RANDOM
+- http://z80-heaven.wikidot.com/advanced-math#toc52
+
 
 
 
