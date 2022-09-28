@@ -59,5 +59,8 @@ x - x^3/3 + (2 x^5)/15 + O(x^6)
 
 
 
+### Ref
+- https://www.intmath.com/blog/mathematics/how-do-you-find-exact-values-for-the-sine-of-all-angles-6212
+
 
 
