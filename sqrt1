@@ -26,6 +26,15 @@ Try replacing the '2 /' in sqrt-closer with 'S>D 2 SM/REM NIP'" ; /-test
 : sqrt 1 sqrt-loop nip ;
 
 
+\\\\\\\\\\\\\\\\\\\\\
+another
+: a ( -- ) 2 s>d ;
+: sqrt-a ( a -- ) dup d* swap d>f f>a f>b f>c ;
 
+The first line defines a new Forth word "a" which initializes a double-precision integer variable with the value 2.
+The second line defines a new Forth word "sqrt-a" which takes the square root of the value stored in the "a" variable , 
+stores the whole part in variable "a" , the numerator in variable "b" and the denominator in variable "c" .
 
-===============================
+Note that this solution will divide the square root into three parts, whole part, numerator and denominator, 
+it's not the exact square root but it's close enough.
+\\\\\\\\\\\\\\\\\\\\
