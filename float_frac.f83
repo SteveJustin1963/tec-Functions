@@ -1,0 +1,26 @@
+: CONV_TO_FRAC  ( n -- x y )
+  DUP  ( n n )
+  8 LSHIFT  ( n n*256 )
+  ROUND  ( n x )
+  DUP  ( n x x )
+  SIGN  ( n x s )
+  NEGATE  ( n x -s )
+  8 LSHIFT  ( n x*256 -s*256 )
+  M+  ( n x+-s*256 )
+  /MOD  ( n q r )
+  SWAP  ( n r q )
+  8 RSHIFT  ( n r/256 q )
+  8 LSHIFT  ( n r/256*256 q )
+  -  ( n r/256*256-q )
+  8 RSHIFT  ( n r/256 q/256 )
+  SWAP  ( n q/256 r/256 )
+;
+
+
+\ This code takes a 16-bit signed floating point number and converts it to the nearest pair of 8-bit signed integers. 
+\ It starts by duplicating the number, then shifting it left 8 bits to multiply it by 256 and round the result. 
+\ It then stores the sign of the number and negates it, shifting it left 8 bits to multiply it by 256 again. 
+\ The code then adds the positive and negative versions together and divides the result by 256 to get the quotient and remainder. 
+\ It then shifts the quotient and remainder right 8 bits to divide them by 256 and shift them left 8 bits to multiply them by 256. 
+\ Finally, it subtracts the quotient from the remainder to get the result.
+
