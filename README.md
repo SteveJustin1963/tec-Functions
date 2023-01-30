@@ -1,6 +1,15 @@
 # tec-Functions
 
-draft, convert entries to MINT
+
+work in progress c, forth then into MINT
+
+
+## float to fraction
+
+This code takes a 16-bit signed floating point number and converts it to the nearest pair of 8-bit signed integers. It starts by duplicating the number, then shifting it left 8 bits to multiply it by 256 and round the result. It then stores the sign of the number and negates it, shifting it left 8 bits to multiply it by 256 again. The code then adds the positive and negative versions together and divides the result by 256 to get the quotient and remainder. It then shifts the quotient and remainder right 8 bits to divide them by 256 and shift them left 8 bits to multiply them by 256. Finally, it subtracts the quotient from the remainder to get the result.  `float_frac.f83`
+
+
+
 
 ## Trig
 - Sine 
