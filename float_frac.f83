@@ -34,4 +34,17 @@ x4 = y - x3 * 256
 PRINT x3; ","; x4
 \\
 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+another example code to convert a signed 16 bit floating point number to the nearest pair of 8 bit signed integers:
+INPUT "Enter a signed 16 bit floating point number: ", x
+x1 = INT(x + 0.5)
+x2 = INT((x - x1) * 256 + 0.5)
+IF x2 > 127 THEN x2 = 127
+IF x2 < -128 THEN x2 = -128
+PRINT x1; ","; x2
+
+\ This code rounds the input number x to the nearest 8 bit signed integer using the INT function and the 0.5 offset. 
+\ The fractional part is computed and also rounded to the nearest 8 bit signed integer using a similar approach. 
+\ The final output is the pair of integers x1 and x2. To handle overflow, the code includes checks to 
+\ limit x2 to the range of an 8 bit signed integer.
 
