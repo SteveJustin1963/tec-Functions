@@ -129,7 +129,9 @@ You can use this code in a Forth interpreter/compiler to calculate the exponent 
 
 This will output `64`, which is 8 raised to the power of 2.
 
-Please note that this code assumes that the result of the exponentiation will fit within the range of 8-bit integers. If the result exceeds 255 (the maximum value for an 8-bit integer), you may get unexpected results or overflow errors. You can add error checking and handling for such cases if needed.
+Please note that this code assumes that the result of the exponentiation will fit within the range of 8-bit integers. 
+If the result exceeds 255 (the maximum value for an 8-bit integer), you may get unexpected results or overflow errors. 
+You can add error checking and handling for such cases if needed.
 
 
 
