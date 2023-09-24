@@ -34,7 +34,7 @@ This code takes a 16-bit signed floating point number and converts it to the nea
 - y=x*x
 
 ## n! 
-`5*4**3*2`
+`5*4*3*2`
 
 ```
 example of a Forth code function that calculates the factorial (n!) of a given integer n:
@@ -48,10 +48,12 @@ example of a Forth code function that calculates the factorial (n!) of a given i
             1-
     repeat
 ;
+```
 Explanation:
-
+```
 : factorial ( n -- n! ) declares a new Forth function called "factorial" that takes an integer n as input and returns the factorial of n.
-1 swap pushes the value 1 onto the stack and swaps it with the input value n
+1 swap pushes the value 1 onto the stack 
+and swaps it with the input value n
 begin starts a loop that will continue until the loop's exit condition is met
 dup while duplicates the top value of the stack (the current value of n) and checks if it is greater than zero. If it is, the loop will continue.
 dup * multiplies the top two values on the stack (the current value of n and the previous value of n)
@@ -60,9 +62,9 @@ repeat ends the loop
 ; closes the function definition
 ```
 
-```
- example of a Forth code function that calculates the factorial of a large number n using a different approach:
 
+ example of a Forth code function that calculates the factorial of a large number n using a different approach:
+```
 : factorial ( n -- n! )
     dup 2 < 
     if drop 1 exit then
@@ -74,6 +76,8 @@ repeat ends the loop
         repeat
         dup factorial *
     ;
+```
+```
 Explanation:
 
 : factorial ( n -- n! ) declares a new Forth function called "factorial" that takes an integer n as input and returns the factorial of n.
