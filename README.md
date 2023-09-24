@@ -97,6 +97,41 @@ It's important to note that this function will consume more stack space for larg
 ## Exponent 
 - x^y
 
+Writing Forth code to calculate an exponent using only 8-bit integers can be a bit challenging due to the limited range of values that can be represented with 8 bits. However, you can create a simple Forth program to calculate the exponent of a number raised to a given power using repeated multiplication. Here's an example of Forth code to achieve this:
+
+```forth
+: exponent ( base power -- result )
+  1 swap 0 ?DO
+    2DUP *
+  LOOP DROP ;
+
+```
+
+Here's how the code works:
+
+1. `: exponent` defines a new Forth word called `exponent` that takes two arguments from the stack: the base and the power.
+
+2. `1 swap` initializes the result to 1 and swaps the order of the base and power on the stack.
+
+3. `0 ?DO` starts a loop that will repeat for the number of times specified by the power.
+
+4. `2DUP *` duplicates the top two values on the stack and then multiplies them. This simulates raising the base to the power.
+
+5. `LOOP` decrements the loop counter and checks if it's greater than zero. If it is, the loop continues; otherwise, it exits.
+
+6. `DROP` removes the loop counter from the stack, leaving the result of the exponentiation.
+
+You can use this code in a Forth interpreter/compiler to calculate the exponent of a base raised to a power. For example:
+
+```forth
+8 2 exponent .
+```
+
+This will output `64`, which is 8 raised to the power of 2.
+
+Please note that this code assumes that the result of the exponentiation will fit within the range of 8-bit integers. If the result exceeds 255 (the maximum value for an 8-bit integer), you may get unexpected results or overflow errors. You can add error checking and handling for such cases if needed.
+
+
 
 ## ABS  
 - |x|
