@@ -1,4 +1,4 @@
-# tec-Functions
+[[# tec-Functions
 
 
 work in progress c, forth then into MINT
@@ -165,3 +165,4 @@ random
 
 
 
+](https://github.com/SteveJustin1963/tec-code-maths-algor-etc/wiki)https://github.com/SteveJustin1963/tec-code-maths-algor-etc/wiki](https://github.com/SteveJustin1963/tec-code-maths-algor-etc/wiki)https://github.com/SteveJustin1963/tec-code-maths-algor-etc/wiki
