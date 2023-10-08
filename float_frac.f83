@@ -24,14 +24,7 @@
 \ It then shifts the quotient and remainder right 8 bits to divide them by 256 and shift them left 8 bits to multiply them by 256. 
 \ Finally, it subtracts the quotient from the remainder to get the result.
 
-\ in basic
-INPUT "Enter a signed 16 bit floating point number: ", x
-x1 = x * 256
-x2 = SGN(x) * 256
-y = INT(x1 + x2)
-x3 = INT(y / 256)
-x4 = y - x3 * 256
-PRINT x3; ","; x4
+ 
 \\
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\
