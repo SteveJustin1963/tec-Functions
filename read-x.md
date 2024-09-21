@@ -94,4 +94,4 @@ References:
 - [How Do You Find Exact Values for the Sine of All Angles?](https://www.intmath.com/blog/mathematics/how-do-you-find-exact-values-for-the-sine-of-all-angles-6212)
 - [Integer Square Root](https://en.wikipedia.org/wiki/Integer_square_root)
 
-This revised document provides a cleaner and organized presentation of the provided information and code snippets for various mathematical functions and operations.
+ 
